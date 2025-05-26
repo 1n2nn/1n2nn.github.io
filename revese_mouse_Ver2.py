@@ -5,6 +5,10 @@ from pynput import keyboard
 from pynput.mouse import Controller as MouseController
 from screeninfo import get_monitors
 
+#初回起動時以下をコマンドプロンプトに入力してインストール
+
+#pip install pynput screeninfo
+
 # ========================
 # 🔧 設定セクション
 # ========================
