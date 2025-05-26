@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>えぬえぬ</h1>
-     <img src="アイコン.png">
+     <img src="アイコン.png" alt="プロフィール画像">
     
     <h2>About</h2>
     <p>
@@ -50,9 +50,22 @@
       <li><a href="https://zenn.dev/">Zenn</a></li>
       <li>
         作った作品
-        <ul>
+  <button onclick="toggleFiles()">▶ ファイルを表示</button>
+  <ul id="fileList" style="display: none;">
+    <li><a href="https://1n2nn.github.io/project1/revese_mouse_Ver2.py">作品1：Pythonツール</a></li>
+  </ul>
+</li>
+
+<script>
+  function toggleFiles() {
+    const fileList = document.getElementById("fileList");
+    const isVisible = fileList.style.display === "block";
+    fileList.style.display = isVisible ? "none" : "block";
+  }
+</script>
+
           
-        </ul>
+        
       </li>
     </ul>
 
